@@ -1,0 +1,7 @@
+---
+- name: Run script on target server
+  hosts: target
+  become: yes  
+  tasks:
+    - name: Run the Linux script
+      script: tool.sh
